@@ -1,0 +1,15 @@
+<DOCTYPE! html>
+<h1><p>The game will begin in <span id="countdowntimer">10 </span> Seconds</p>
+
+<script type="text/javascript">
+    var timeleft= 10;
+    var gameStarting = setInterval(function(){
+        timeleft--;
+        document.getElementById("countdowntimer").textContent =timeleft;
+        if(timeleft <= 0)
+            clearInterval(gameStarting);
+    } , 1000);
+</script></h1>     
+<br><br><br><br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9s7Fhkz4b7f_eVfDQAyH-QFyimca3pbBoQ&usqp=CAU" width=500 height=250>
+<h1><a href="11to20quiz.html"><button width=250 height=70><h2>Click Here</h2></button></a>
